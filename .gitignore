@@ -1,0 +1,7 @@
+*.pyc
+*~
+__pycache__
+pvenv
+db.sqlite3
+/satic
+.DS_Store
