@@ -1,19 +1,8 @@
-<DOCTYPE! html>
-<html>
+{% extends 'land/base.html' %}
 
-	<head>
-	<title>Portfolio - Brandy R. Wills</title>
-	</head>
-
-	<body>
-		<div>
-		<h1>Brandy's Portfolio</h1>
-		<h3>About Me:</h3>
-		<p>(Here there will be some stuff about me.)</p>
-		</div>
-		<div>
-			<h3>Recent Updates:</h3>
-			<div>(The update posts will go here)</div>
-		</div>
-	</body>
-</html>
+{% block content %}
+	<p>You should see some text here.</p>
+	{% for update in updates %}
+		<h3>{{ update.title }}</h3>
+	{% endfor %}
+{% endblock %}

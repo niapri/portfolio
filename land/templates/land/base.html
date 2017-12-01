@@ -1,0 +1,21 @@
+{% load staticfiles %}
+
+<html land = "en-US">
+
+        <head>
+		<link rel = "stylesheet" href = "{% static 'css/stylesheet.css' %}">
+        	<link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Manuale">
+        	<link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Raleway">
+        <title>Portfolio - Brandy R. Wills</title>
+        </head>
+	<header>
+		<h1>Brandy's updates</h1>
+	</header>
+
+        <body>
+		<div class = "push">
+		{% block content %}
+		{% endblock %}
+		</div>
+        </body>
+</html
